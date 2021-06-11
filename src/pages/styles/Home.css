@@ -1,0 +1,10 @@
+.hero{
+    background-image: url('../../assets/IMG/Blue_car.jpg');
+    /* background-color: red; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+
+}

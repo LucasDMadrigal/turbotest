@@ -1,0 +1,11 @@
+nav{
+    background-color: blue;
+}
+
+.burger-menu{
+    background-image: url('../../assets/Icons/Burguer\ Menu.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
