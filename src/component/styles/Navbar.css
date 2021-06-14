@@ -1,11 +1,30 @@
-nav{
-    background-color: blue;
+nav {
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-.burger-menu{
-    background-image: url('../../assets/Icons/Burguer\ Menu.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
+.logo {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.logo > img {
+  width: 40px;
+  height: 40px;
+}
+
+.burger-menu {
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  /* margin-left: 10px; */
+  background-image: url("../../assets/Icons/burguer-menu.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

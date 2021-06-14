@@ -1,10 +1,14 @@
 import React from 'react'
-
-
+import './styles/Navbar.css'
+import Logo from '../assets/Logo/Simbolo.svg'
 function Navbar() {
     return (
         <nav>
-            <button className="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i className="burger-menu"></i></button>
+            <figure className="logo">
+                <img className src={Logo} alt="" />
+            </figure>
+            <button className="btn burger-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            </button>
 
             <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div className="offcanvas-header">
