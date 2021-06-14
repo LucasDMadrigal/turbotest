@@ -28,3 +28,47 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.offcanvas {
+  background-color: #2f52a0;
+  padding: 20px;
+}
+
+.modal-backdrop.show {
+  background-color: #17284f;
+  opacity: 1;
+}
+
+.offcanvas_header {
+  padding-left: 20px;
+}
+.offcanvas img {
+  height: 40px;
+  width: 43px;
+}
+
+.offcanvas ul {
+  list-style: none;
+  text-align: left;
+}
+
+.offcanvas ul li {
+  margin-top: 20px;
+  /* margin-bottom: ; */
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 4rem;
+}
+
+.btn_close {
+  background-color: #89a3dc;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #89a3dc;
+}
+
+.btn_close img {
+  height: 20px;
+  width: 20px;
+}

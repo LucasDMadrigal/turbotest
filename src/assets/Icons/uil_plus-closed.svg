@@ -7,10 +7,10 @@
     <g id="Icons-/-uil:plus-closed" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="uil:plus">
             <rect id="ViewBox" x="0" y="0" width="24" height="24"></rect>
-            <mask id="mask-2" fill="white">
+            <mask id="mask-2" fill="#F3F6FC">
                 <use xlink:href="#path-1"></use>
             </mask>
-            <use id="Path" fill="#2F52A0" xlink:href="#path-1"></use>
+            <use id="Path" fill="#F3F6FC" xlink:href="#path-1"></use>
         </g>
     </g>
 </svg>
