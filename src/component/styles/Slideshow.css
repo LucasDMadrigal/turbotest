@@ -1,0 +1,138 @@
+.slideshow_menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 45px;
+  background-color: #f3f6fc;
+  display: flex;
+  align-items: center;
+}
+
+.slideshow_menu a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #3552a6;
+  margin-right: 67px;
+}
+
+.slideshow_main {
+  padding: 0 auto;
+}
+
+.slideshow_main h2 {
+  margin: 37px 0 30px 0;
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: #17284f;
+}
+
+.slideshow_main p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #7f7f80;
+  line-height: 2.4rem;
+}
+
+.slideshow_main p b {
+  font-weight: bold;
+}
+
+.slideshow_yes_no {
+  padding: 20px;
+}
+
+.slideshow_yesno--image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slideshow_yesno--image-1 {
+  background-image: url("../../assets/IMG/Black_car.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 280px;
+  height: 257px;
+  margin: 5px;
+}
+.slideshow_yesno--image-2 {
+  background-image: url("../../assets/IMG/Rain_car.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 280px;
+  height: 257px;
+  margin: 5px;
+}
+.slideshow_yesno--image-3 {
+  background-image: url("../../assets/IMG/VW_car.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 280px;
+  height: 257px;
+  margin: 5px;
+}
+.slideshow_yesno--image-4 {
+  background-image: url("../../assets/IMG/Red_car.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 280px;
+  height: 257px;
+  margin: 5px;
+}
+.slideshow_yesno--image-5 {
+  background-image: url("../../assets/IMG/Bluesky_car.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 280px;
+  height: 257px;
+  margin: 5px;
+}
+.slideshow_yesno--image-6 {
+  background-image: url("../../assets/IMG/Stop_car.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 280px;
+  height: 257px;
+  margin: 5px;
+}
+
+.slideshow_hold {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.slideshow_hold h2 {
+  margin: 0 20px 0 20px;
+}
+
+.btn_hold {
+  border: 2px solid #f3f6fc;
+  background-color: #3552a6;
+  border-radius: 5px;
+  width: 118px;
+  height: 33px;
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin: 30px 0 60px 0;
+}
+
+.slideshow_hold--text-container {
+  padding: 0 20px;
+}
+
+.slideshow_hold-image {
+  box-sizing: content-box;
+  background-image: url("../../assets/IMG/Red02_car.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 320px;
+  height: 257px;
+}
