@@ -1,16 +1,20 @@
 import React from 'react'
 import './styles/Slideshow.css'
+
 function Slideshow() {
     return (
-        <div>
-            <div className="container-fluid slideshow_menu">
+        <div >
+            <div id="slideshow_menu" className=" nav container-fluid slideshow_menu scrollspy-example">
+
                 <a href="#yes_no" className="slideshow_menu--item">Yes or no?</a>
+
                 <a href="#hold" className="slideshow_menu--item">Hold</a>
+
             </div>
-            <div className="slideshow_main">
+            <div style={{ position: 'relative' }} data-bs-spy="scroll" data-offset="45" data-bs-target="#slideshow_menu" className="slideshow_main">
 
                 <div className="slideshow_yes_no" id="yes_no">
-                    <h2>Is she dead, yes or no?</h2>
+                    <h2 id="yes_no">Is she dead, yes or no?</h2>
                     <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
                     <div className="slideshow_yesno--image-container">
                         <div className="slideshow_yesno--image slideshow_yesno--image-1">
@@ -27,9 +31,9 @@ function Slideshow() {
                         </div>
                     </div>
                 </div>
-                <div className="slideshow_hold" id="hold">
+                <div className="slideshow_hold" >
 
-                    <h2>Hold on to your butts</h2>
+                    <h2 id="hold">Hold on to your butts</h2>
                     <div className="slideshow_hold--text-container">
                         <div className="slideshow_hold">
                             <p>Well, the way they make shows is, <b>they make one show.</b> That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p>
