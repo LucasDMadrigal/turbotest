@@ -67,7 +67,7 @@ function Slideshow() {
                                 <button className="btn_hold">Conocenos</button>
                             </div>
                         </div>
-                        <div className="slideshow_hold-image"></div>
+                        <div className="slideshow_hold-image-reverse"></div>
 
                     </div>
                 </div>
