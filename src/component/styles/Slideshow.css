@@ -11,8 +11,15 @@
   align-items: center;
 }
 
-.slideshow_menu .active {
-  border-bottom: blueviolet 2px solid;
+.active {
+  border-bottom: #2f52a0 2px solid;
+}
+
+:target::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-top: -80px;
 }
 
 .slideshow_menu a {
