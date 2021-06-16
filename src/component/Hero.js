@@ -19,11 +19,11 @@ function Hero() {
                     Contactanos
                     <span className=""> > </span>
                 </button>
-                <div className="hero-items-pag">
-                    <img src={leftArrow} className="arrow-left" />
-                    <p>1 / 3</p>
-                    <img src={rightArrow} className="arrow-right" />
-                </div>
+            </div>
+            <div className="hero-items-pag">
+                <img src={leftArrow} className="arrow-left" />
+                <p>1 / 3</p>
+                <img src={rightArrow} className="arrow-right" />
             </div>
         </header>
 

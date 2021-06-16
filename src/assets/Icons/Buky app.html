@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://localhost:3000/#yes_no -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <link rel="icon" href="http://localhost:3000/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Web site created using create-react-app">
+  <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+  <link href="./Buky app_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <link href="./Buky app_files/css2" rel="stylesheet">
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="http://localhost:3000/manifest.json">
+  <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Buky app</title>
+<script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script><style type="text/css">body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+</style><style type="text/css">footer {
+  background-color: #fbfcfe;
+  padding: 100px 30px 0px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.horizontal-logo {
+  width: 267px;
+  height: 48px;
+}
+
+footer h4 {
+  margin-top: 47px;
+  margin-bottom: 60px;
+  margin-right: 40px;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #7f7f80;
+}
+
+.separador {
+  position: relative;
+  left: -10px;
+  height: 20px;
+  width: 2px;
+  background-color: #2f52a0;
+}
+
+footer h6 {
+  margin-bottom: 20px;
+  color: #17284f;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+}
+
+.footer_contact,
+.footer_explorer,
+.policy,
+.footer_marks {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  min-width: 250px;
+  margin-bottom: 40px;
+}
+
+.footer_contact--title {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer_contact p {
+  color: #7f7f80;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.footer_contact p b {
+  color: #2f52a0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.footer_explorer--title {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer_explorer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_explorer ul li {
+  margin-bottom: 10px;
+}
+
+.footer_explorer ul a {
+  color: #7f7f80;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  text-decoration: none;
+}
+
+.social-media_container {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.social-media_container--icon {
+  width: 63px;
+  height: 24px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.policy ul {
+  list-style: none;
+  padding: 0;
+}
+
+.policy a {
+  display: block;
+  text-decoration: none;
+  color: #7f7f80;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.footer_marks {
+  height: 69px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.footer_marks p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #7f7f80;
+}
+</style><style type="text/css">.hero {
+  background-image: url(/static/media/Blue_car.0d2b3d01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  min-height: 515px;
+}
+
+.tittle-hero {
+  padding: 114px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.tittle-hero_text {
+  margin: 5px 0;
+}
+
+.tittle-hero_text h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+.tittle-hero_text h6 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 26px;
+  color: #f3f6fc;
+  margin-top: 30px;
+}
+
+.hero-items-pag {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  min-width: 86px;
+  min-height: 24px;
+  position: relative;
+  bottom: 40px;
+}
+
+.btn-contact {
+  height: 43px;
+  width: 166px;
+  color: #fff;
+  background-color: #3552a6;
+  border-radius: 5px;
+  border: 2px solid #f3f6fc;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-left: 24px;
+  padding-right: 10px;
+  margin: 30px;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.hero-items-pag .arrow-left {
+  height: 17px;
+  width: 30px;
+  margin: 7px;
+}
+.hero-items-pag .arrow-right {
+  height: 17px;
+  width: 30px;
+  margin: 7px;
+}
+
+.hero-items-pag p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  z-index: 200;
+}
+</style><style type="text/css">nav {
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  padding: 20px 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.logo > img {
+  width: 40px;
+  height: 40px;
+}
+
+.burger-menu {
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  /* margin-left: 10px; */
+  background-image: url(/static/media/burguer-menu.d0f2c0d3.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.offcanvas {
+  background-color: #2f52a0;
+  padding: 20px;
+}
+
+.modal-backdrop.show {
+  background-color: #17284f;
+  opacity: 1;
+}
+
+.offcanvas_header {
+  padding-left: 20px;
+}
+.offcanvas img {
+  height: 40px;
+  width: 43px;
+}
+
+.offcanvas ul {
+  list-style: none;
+  text-align: left;
+}
+
+.offcanvas ul li {
+  margin-top: 20px;
+  /* margin-bottom: ; */
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 4rem;
+}
+
+.btn_close {
+  background-color: #89a3dc;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #89a3dc;
+}
+
+.btn_close img {
+  height: 20px;
+  width: 20px;
+}
+</style><style type="text/css">.slideshow_menu {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  width: 100%;
+  height: 45px;
+  background-color: #f3f6fc;
+  padding-left: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.slideshow_menu .active {
+  border-bottom: blueviolet 2px solid;
+}
+
+.slideshow_menu a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #3552a6;
+  margin-right: 67px;
+}
+
+.slideshow_main {
+  padding: 0 auto;
+  position: relative;
+}
+
+.slideshow_main h2 {
+  margin: 37px 0 30px 0;
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: #17284f;
+}
+
+.slideshow_main p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #7f7f80;
+  line-height: 2.4rem;
+}
+
+.slideshow_main p b {
+  font-weight: bold;
+}
+
+.slideshow_yes_no {
+  padding: 20px;
+}
+
+.slideshow_yesno--image-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.slideshow_yesno--image {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.slideshow_yesno--image img {
+  width: 20px;
+}
+
+.slideshow_yesno--image h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.slideshow_yesno--image-1 {
+  background-image: url(/static/media/Black_car.4b2f0d5d.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 280px;
+  height: 257px;
+  margin: 5px;
+}
+.slideshow_yesno--image-2 {
+  background-image: url(/static/media/Rain_car.532d415d.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 280px;
+  height: 257px;
+  margin: 5px;
+}
+.slideshow_yesno--image-3 {
+  background-image: url(/static/media/VW_car.d4a04b41.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 280px;
+  height: 257px;
+  margin: 5px;
+}
+.slideshow_yesno--image-4 {
+  background-image: url(/static/media/Red_car.11b94a28.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 280px;
+  height: 257px;
+  margin: 5px;
+}
+.slideshow_yesno--image-5 {
+  background-image: url(/static/media/Bluesky_car.1dabdfcc.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 280px;
+  height: 257px;
+  margin: 5px;
+}
+.slideshow_yesno--image-6 {
+  background-image: url(/static/media/Stop_car.2030eb3d.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 280px;
+  height: 257px;
+  margin: 5px;
+}
+
+.slideshow_yesno--content {
+}
+
+.slideshow_hold--title {
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.slideshow_hold--title h2 {
+  margin: 0 20px 0 20px;
+}
+
+.btn_hold {
+  border: 2px solid #f3f6fc;
+  background-color: #3552a6;
+  border-radius: 5px;
+  width: 118px;
+  height: 33px;
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin: 30px 0 0 0;
+}
+
+.slideshow_hold--text-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.slideshow_hold--text-container {
+  padding: 0 20px;
+}
+
+.slideshow_hold-image {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  background-image: url(/static/media/Red02_car.2c58c945.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 320px;
+  height: 257px;
+  margin-bottom: 60px;
+}
+</style><style type="text/css">* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 62.5%;
+}
+</style><script type="text/javascript" charset="utf-8" src="./Buky app_files/1.0cc1345fcc04e27233b2.hot-update.js.download"></script></head>
+
+<body cz-shortcut-listen="true">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"><div><main><header class="hero container-fluid"><nav><figure class="logo"><img src="./Buky app_files/Simbolo.1a4f34de.svg" alt="logo"></figure><button class="btn burger-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></button><div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"><div class="offcanvas-header offcanvas_header"><img src="./Buky app_files/Simbolo.1a4f34de.svg" alt="logo"><button type="button" class=" btn_close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><img class="btn_close--icon" src="./Buky app_files/uil_plus-closed.2f446be5.svg"></button></div><div class="offcanvas_body offcanvas-body"><ul><li>Home</li><li>Recomendados</li><li>La agencia</li><li>Contacto</li></ul></div></div></nav><div class="tittle-hero"><div class="tittle-hero_text"><h1>Are you ready for the truth?</h1><h6>Well, the way they make shows is, they make one show. That show's called a pilot.</h6></div><button class="btn-contact">Contactanos<span class=""> &gt; </span></button></div><div class="hero-items-pag"><img src="./Buky app_files/uil_arrow-left.5a67828f.svg" class="arrow-left"><p>1 / 3</p><img src="./Buky app_files/uil_arrow-right.8312ca5a.svg" class="arrow-right"></div></header><div><div id="slideshow_menu" class=" nav container-fluid slideshow_menu"><a href="http://localhost:3000/#yes_no" class="slideshow_menu--item">Yes or no?</a><a href="http://localhost:3000/#hold" class="slideshow_menu--item">Hold</a></div><div data-bs-spy="scroll" data-offset="45" data-bs-target="#slideshow_menu" class="slideshow_main"><div class="slideshow_yes_no" id="yes_no"><h2 id="yes_no">Is she dead, yes or no?</h2><p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p><div class="slideshow_yesno--image-container" style="margin-left: auto;margin-right: auto;width: 900px;"><div class="slideshow_yesno--image slideshow_yesno--image-1"><h4>Title Project</h4><img src="./Buky app_files/uil_arrow-right-white.2788b201.svg" alt="arrow-logo"></div><div class="slideshow_yesno--image slideshow_yesno--image-2"><h4>Title Project</h4><img src="./Buky app_files/uil_arrow-right-white.2788b201.svg" alt="arrow-logo"></div><div class="slideshow_yesno--image slideshow_yesno--image-3"><h4>Title Project</h4><img src="./Buky app_files/uil_arrow-right-white.2788b201.svg" alt="arrow-logo"></div><div class="slideshow_yesno--image slideshow_yesno--image-4"><h4>Title Project</h4><img src="./Buky app_files/uil_arrow-right-white.2788b201.svg" alt="arrow-logo"></div><div class="slideshow_yesno--image slideshow_yesno--image-5"><h4>Title Project</h4><img src="./Buky app_files/uil_arrow-right-white.2788b201.svg" alt="arrow-logo"></div><div class="slideshow_yesno--image slideshow_yesno--image-6"><h4>Title Project</h4><img src="./Buky app_files/uil_arrow-right-white.2788b201.svg" alt="arrow-logo"></div></div></div><div class="slideshow_hold"><h2 id="hold">Hold on to your butts</h2><div class="slideshow_hold--element-container"><div class="slideshow_hold--text-container"><div class="slideshow_hold--title"><p>Well, the way they make shows is, <b>they make one show.</b> That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p><button class="btn_hold">Conocenos</button></div></div><div class="slideshow_hold-image"></div></div><div class="slideshow_hold--element-container"><div class="slideshow_hold--text-container"><div class="slideshow_hold--title"><p>Well, the way they make shows is, <b>they make one show.</b> That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p><button class="btn_hold">Conocenos</button></div></div><div class="slideshow_hold-image"></div></div></div></div></div></main><footer class=""><picture><img class="horizontal-logo" src="./Buky app_files/Horizontal-color.f5c1463a.svg" alt="footer-logo"></picture><h4>Uuummmm, this is a tasty burger!</h4><div class="footer_contact"><div class="footer_contact--title"><div class="separador"></div><h6>CONTACT</h6></div><p><b>info@bukyapp.com</b></p><p><b>+34 722 73 96 22</b></p><p>Calle Isaac Peral, 39,</p><p>35660, Las Palmas</p></div><div class="footer_explorer"><div class="footer_explorer--title"><div class="separador"></div><h6>EXPLORA</h6></div><ul><li><a href="http://localhost:3000/">HOME</a></li><li><a href="http://localhost:3000/">RECOMENDADOS</a></li><li><a href="http://localhost:3000/">LA AGENCIA</a></li><li><a href="http://localhost:3000/">CONTACTO</a></li></ul></div><div class="social-media_container"><div class="social-media_container--icon"><img src="./Buky app_files/uil_facebook.5062c050.svg"><img src="./Buky app_files/uil_instagram.741714c7.svg"></div></div><div class="policy"><ul><li><a href="http://localhost:3000/" class="policy_item">Aviso Legal</a></li><li><a href="http://localhost:3000/" class="policy_item">Politica de Cookies</a></li><li><a href="http://localhost:3000/" class="policy_item">Politica de Privacidad</a></li></ul></div><div class="footer_marks"><p class="trade-mark">© Turbo Testing 2021</p><p class="credits">Diseñado por juanjov.com</p></div></footer></div></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+  <script src="./Buky app_files/bootstrap.bundle.min.js.download" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./Buky app_files/bundle.js.download"></script>
+
+</body></html>
