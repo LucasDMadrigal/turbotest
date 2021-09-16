@@ -6,6 +6,8 @@ With a burger menu that open a side panel and responsive design that is suitable
 
 We also have a floating menu that highlights the item we have on the screen
 
+You can test this page [here](!https://turbotest-react.netlify.app/)
+
 # Turbotest
 
 Una landing page de una tienda de automoviles de alta gama.
